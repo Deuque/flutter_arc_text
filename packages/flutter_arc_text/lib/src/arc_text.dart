@@ -108,6 +108,7 @@ class ArcText extends StatelessWidget {
           interLetterAngle: interLetterAngle,
           painterDelegate: painterDelegate,
         ),
+    child: Container()
       );
 }
 
