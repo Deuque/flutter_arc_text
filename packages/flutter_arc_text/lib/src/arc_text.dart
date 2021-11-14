@@ -108,7 +108,6 @@ class ArcText extends StatelessWidget {
           interLetterAngle: interLetterAngle,
           painterDelegate: painterDelegate,
         ),
-    child: Container()
       );
 }
 
@@ -146,6 +145,9 @@ class _Painter extends CustomPainter {
 
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => true;
+  
+  @override
+bool hitTest(Offset position)=>true
 }
 
 /// Use this delegate to override how the text will be rendered.
